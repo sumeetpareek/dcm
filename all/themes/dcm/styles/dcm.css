@@ -1,0 +1,65 @@
+  
+/*
+ *   Menu font
+ */  
+
+  @font-face {
+    font-family: 'BostonTrafficRegular';
+    src: url('../fonts/boston_traffic-webfont.eot');
+    src: url('../fonts/boston_traffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/boston_traffic-webfont.woff') format('woff'),
+         url('../fonts/boston_traffic-webfont.ttf') format('truetype'),
+         url('../fonts/boston_traffic-webfont.svg#BostonTrafficRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+/*
+ *   Generic styles
+ */
+  a {
+    text-decoration:none;
+  }
+  
+  a:hover {
+    text-decoration:none;
+    color:#BF3030;
+  }
+  
+
+/* 
+ *   Front page styling
+ */
+  
+  #front-page-wrapper {
+    background:url('../images/dcm-front-bg.png') no-repeat;
+    height:500px;
+    margin-top:30px;
+  }
+   
+  #logo {
+    padding-top:15px;
+  }
+  
+  #main-nav-menu ul li {
+    display:inline;
+    list-style:none;
+    list-style-image:none;
+    margin-left:35px;
+    margin-right:30px;
+  }
+  
+  #main-nav-menu ul li a {
+    font-family:'BostonTrafficRegular';
+    color:#000;
+    font-size:13px;
+  }
+  
+  #main-nav-menu ul li a:hover {
+    color:#BF3030;
+  }
+  
+  #main-nav-menu ul {
+    float:right;
+  }
