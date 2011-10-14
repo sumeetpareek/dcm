@@ -38,6 +38,7 @@ stylesheets[all][]   = css/nodes.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
+stylesheets[all][]   = css/custom.css
 stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
@@ -58,7 +59,7 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; To add a new region, copy Zen's page.tpl.php to your sub-theme's directory,
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
-regions[sidebar_first]  = First sidebar
+;regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[navigation]     = Navigation bar
 regions[highlight]      = Highlighted content
