@@ -284,7 +284,18 @@
   
   
   
+/*
+ *   Others overrides
+ */
+ 
+  tr.odd td, tr.even, tr.odd, tbody tr:nth-child(even) td, tbody tr.even td, thead th, th {
+    background:none;
+    border-bottom:1px solid #e0e0e0;
+  }
   
+  td {
+    font-size:13px;
+  }
   
   #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {
     background-color:none !important;
