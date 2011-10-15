@@ -1,0 +1,3 @@
+<?php
+
+include_once('drupal_camp_mumbai_settings.features.inc');

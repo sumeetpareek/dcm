@@ -1,0 +1,23 @@
+	name = Drupal Camp Mumbai
+	description = Drupal Camp Mumbai theme
+	core = 6.x
+	base theme = blueprint
+	version = "6.22"
+	project = "Drupal"
+  
+  features[] = logo
+  features[] = favicon
+  ;features[] = primary_links
+	
+	;regions[left] = Left sidebar
+  regions[right] = Right sidebar
+  regions[content] = Content
+  regions[header] = Header
+  regions[footer] = Footer
+  regions[fp_sponsors] = Front page sponsors
+  regions[fp_proposal] = Front page proposal
+  ;regions[featured] = Featured
+
+	stylesheets[screen,projection][] = styles/dcm.css
+
+	;scripts[] = scripts/script.js
