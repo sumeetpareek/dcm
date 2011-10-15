@@ -39,7 +39,7 @@
           <?php print $header; ?>
         </div>
         <div id="dcm-date" class="prepend-9 span-13 last">
-          09-11-2011
+          09-11-2011 _/_ 10-11-2011
         </div>
         
         <div id="submit-proposal" class="left">

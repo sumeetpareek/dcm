@@ -153,7 +153,7 @@
   
   #front-page-wrapper {
     background:url('../images/dcm-front-bg.png') no-repeat;
-    height:470px;
+    height:475px;
   }
    
   #dcm-date {
@@ -220,37 +220,41 @@
     background:url('../images/dcm-front-bg.png') no-repeat;
     display:inline-block;
     height:190px;
-    position: fixed;
     z-index: 9999;
   }
 
   #logo {
-    padding-top:15px;
+    padding-top:20px;
   }
   
   #main-nav-menu ul li {
     display:inline;
     list-style:none;
     list-style-image:none;
-    margin-left:35px;
-    margin-right:30px;
   }
   
   #main-nav-menu ul li a {
     font-family:'BostonTrafficRegular';
     color:#3A3A3A;
-    font-size:13px;
+    font-size:16px;
+    display: block;
+    float: left;
   }
-  
-  #main-nav-menu ul li a:hover {
-    color:#BF3030;
-  }
-  
+   
   #main-nav-menu ul {
     float:right;
-    padding-top:45px;
+    margin: 0 0 1.5em 1.5em;
+    padding-top: 7px;
   }
   
+  #main-nav-menu ul li.Sessions a {padding: 44px 0 0 30px;color:#fff;background-image: url('../images/sessions_bg.png');background-position: -95px 10px;background-repeat: no-repeat;}
+  #main-nav-menu ul li.Program a {padding: 44px 0 0 30px;color:#fff;background-image: url('../images/program_bg.png');background-position: -100px 10px;background-repeat: no-repeat;}
+  #main-nav-menu ul li.Community a {padding: 44px 0 0 30px;margin-left:126px;background-image: url('../images/community_bg.png');background-position: -82px 10px;background-repeat: no-repeat;}
+  #main-nav-menu ul li.Sponsors a {padding: 44px 0 0 30px;background-image: url('../images/sponsors_bg.png');background-position: -92px 10px;background-repeat: no-repeat;}
+  #main-nav-menu ul li.Gallery a {padding: 44px 0 0 30px;background-image: url('../images/gallery_bg.png');background-position: -100px 10px;background-repeat: no-repeat;}
+  #main-nav-menu ul li.Mumbai a {padding: 44px 10px 0 30px;background-image: url('../images/mumbai_bg.png');background-position: -110px 10px;background-repeat: no-repeat;}
+
+
 
 /*
  *   Footer styles
@@ -284,14 +288,9 @@
   }
   
   
-  
-  
-  
-  
   #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {
     background-color:none !important;
   }
 
   body.not-front #dcm-main-content {
-    margin-top: 190px;
   }
