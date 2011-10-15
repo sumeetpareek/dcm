@@ -22,7 +22,7 @@
 <body class="<?php print $body_classes; ?>">
 
 <div class="container">
-  <div id="header">kaka
+  <div id="header">
       <?php if ($title): ?>
         <div id="logo" class="site_title">
           <?php print $logo_block; ?>
