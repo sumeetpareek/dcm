@@ -43,8 +43,10 @@
         </div>
         
         <div id="submit-proposal" class="left">
+          <?php print $fp_proposal; ?>
         </div>
         <div id="are-you-a-sponsor" class="left">
+          <?php print $fp_sponsors; ?>
         </div>
       </div>
     </div>

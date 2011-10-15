@@ -42,7 +42,23 @@
   a:visited {
     color:#48A;
   }
-
+  
+  input[type=text], input[type=password], textarea, select {
+    border:1px solid #CCC;
+    padding:0.5em;
+    color:#444;
+    font-family:"Lucida Grande", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:13px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    border:1px solid #999;
+  }
+  
+  h1 {
+    font-family:'BostonTrafficRegular';
+  }
+  
 /* 
  *   Layout styling
  */
@@ -74,6 +90,9 @@
     color:#E7E9EB;
   }
  
+  .twtr-hd, .twtr-ft {
+    display: none;
+  }
 
 /* 
  *   Front page styling
@@ -121,10 +140,9 @@
     padding:15px;
   }
   
-  #submit-proposal .block h2, #are-you-a-sponsor .block h2{
+  #submit-proposal .block h3, #are-you-a-sponsor .block h3 {
     font-size:23px;
     color:#0A78BD;
-    text-align:center;
     margin-bottom:10px;
   }
   
@@ -212,4 +230,13 @@
     list-style-image:none;
     margin-left:35px;
     margin-right:30px;
+  }
+  
+  
+  
+  
+  
+  
+  #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {
+    background-color:none !important;
   }
