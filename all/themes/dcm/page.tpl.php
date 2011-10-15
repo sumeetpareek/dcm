@@ -22,74 +22,67 @@
 <body class="<?php print $body_classes; ?>">
 
 <div class="container">
-  <div id="header">
-      <?php if ($title): ?>
-        <div id="logo" class="site_title">
-          <?php print $logo_block; ?>
-        </div>
-      <?php else: ?>
-        <h1 id="logo">
-          <?php print $logo_block; ?>
-        </h1>
-      <?php endif; ?>
-      
-      <?php if ($search_box): ?>
-        <div id="search-box" class="span-8 last prepend-16">
-          <?php print $search_box; ?>
-        </div> <!-- /#search-box -->
-      <?php endif; ?>
-    <?php print $header; ?>
-    <?php if (isset($primary_links)) : ?>
-      <?php print theme('links', $primary_links, array('id' => 'nav', 'class' => 'links primary-links')) ?>
+  <div id="dcm-header" class="dcm-header-not-front">
+    <div id="logo" class="span-7 prepend-1">
+      <?php print $logo_block; ?>
+    </div>
+
+    <?php if ($search_box): ?>
+      <div id="search-box" class="span-8 last prepend-16">
+        <?php print $search_box; ?>
+      </div> <!-- /#search-box -->
     <?php endif; ?>
-    <?php if (isset($secondary_links)) : ?>
-      <?php print theme('links', $secondary_links, array('id' => 'subnav', 'class' => 'links secondary-links')) ?>
-    <?php endif; ?>
-  </div>
-
-  <?php if ($left): ?>
-    <div class="<?php print $left_classes; ?>"><?php print $left; ?></div>
-  <?php endif ?>
-
-  <div class="<?php print $center_classes; ?>">
-    <?php
-      if ($breadcrumb != '') {
-        print $breadcrumb;
-      }
-
-      if ($tabs != '') {
-        print '<div class="tabs">'. $tabs .'</div>';
-      }
-
-      if ($messages != '') {
-        print '<div id="messages">'. $messages .'</div>';
-      }
-
-      if ($title != '') {
-        print '<h1>'. $title .'</h1>';
-      }
-
-      print $help; // Drupal already wraps this one in a class
-
-      print $content;
-      print $feed_icons;
-    ?>
-
-    <?php if ($footer_message || $footer): ?>
-      <div id="footer" class="clear">
-        <?php if ($footer): ?>
-          <?php print $footer; ?>
-        <?php endif; ?>
-        <?php if ($footer_message): ?>
-          <div id="footer-message"><?php print $footer_message; ?></div>
-        <?php endif; ?>
+    
+    <div id="main-nav-menu" class="span-22 last">
+      <div class="span-22 last">
+        <?php print $header; ?>
       </div>
-    <?php endif; ?>
+      <div id="dcm-date" class="prepend-9 span-13 last">
+        09-11-2011
+      </div>
+    </div>
   </div>
+  
+  <div id="dcm-main-content" class="span-30">
+    <div class="<?php print $center_classes; ?>">
+      <?php
+        if ($breadcrumb != '') {
+          print $breadcrumb;
+        }
 
-  <?php if ($right): ?>
-    <div class="<?php print $right_classes; ?>"><?php print $right; ?></div>
-  <?php endif ?>
+        if ($tabs != '') {
+          print '<div class="tabs">'. $tabs .'</div>';
+        }
+
+        if ($messages != '') {
+          print '<div id="messages">'. $messages .'</div>';
+        }
+
+        if ($title != '') {
+          print '<h1>'. $title .'</h1>';
+        }
+
+        print $help; // Drupal already wraps this one in a class
+
+        print $content;
+        //print $feed_icons;
+      ?>
+    </div>
+
+    <?php if ($right): ?>
+      <div class="<?php print $right_classes; ?>"><?php print $right; ?></div>
+    <?php endif ?>
+  </div>  
+  
+  <div id="dcm-footer" class="span-30">
+    <div class="span-21">
+      <?php print $footer; ?>
+      &nbsp;
+    </div>
+    <div id="footer-message" class="span-9 last">
+      <?php print $footer_message; ?>
+    </div>
+  </div>
 
   <?php print $scripts ?>
   <?php print $closure; ?>

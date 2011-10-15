@@ -18,15 +18,53 @@
 /*
  *   Generic styles
  */
+  
+  body {
+    font-size:13px;
+    color:#444;
+    /*
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    */
+    font-family:"Lucida Grande", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:normal;
+  }
+   
   a {
     text-decoration:none;
+    color:#0A78BD;
   }
   
   a:hover {
     text-decoration:none;
     color:#BF3030;
+  }  
+
+/* 
+ *   Layout styling
+ */
+  
+  .col-right .block {
+    padding:15px;
   }
   
+  #dcm-main-content {
+    background:url('../images/main-bg.png') repeat-y;
+    display:inline-block;
+  }
+
+
+/*
+ *   Sidebar styling
+ */
+ 
+  .col-right a {
+    color:#F2E250;
+  }
+  
+  .col-right {
+    color:#E7E9EB;
+  }
+ 
 
 /* 
  *   Front page styling
@@ -35,7 +73,6 @@
   #front-page-wrapper {
     background:url('../images/dcm-front-bg.png') no-repeat;
     height:500px;
-    margin-top:30px;
   }
    
   #logo {
@@ -52,7 +89,7 @@
   
   #main-nav-menu ul li a {
     font-family:'BostonTrafficRegular';
-    color:#000;
+    color:#3A3A3A;
     font-size:13px;
   }
   
@@ -62,4 +99,80 @@
   
   #main-nav-menu ul {
     float:right;
+    margin-top:15px;
   }
+  
+  #dcm-date {
+    font-family:'BostonTrafficRegular';
+    color:#3A3A3A;
+    font-size:50px;
+  }
+  
+  #submit-proposal {
+    margin-left:303px;
+    margin-right:14px;
+  }
+  
+  #submit-proposal, #are-you-a-sponsor {
+    background:#F6F6F6;
+    height:270px;
+    overflow:hidden;
+    padding:0;
+    width:233px;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    -o-border-radius:16px;
+    -ms-border-radius:16px;
+    -khtml-border-radius:16px;
+    border-radius:16px;
+    -moz-box-shadow:0 1px 2px #333;
+    -webkit-box-shadow:0 1px 2px #333;
+    -o-box-shadow:0 1px 2px #333;
+    box-shadow:0 1px 2px #333;
+  }
+  
+  #submit-proposal .block, #are-you-a-sponsor .block {
+    padding:15px;
+  }
+  
+  #submit-proposal .block h2, #are-you-a-sponsor .block h2{
+    font-size:23px;
+    color:#0A78BD;
+    text-align:center;
+    margin-bottom:10px;
+  }
+  
+
+/*
+ *   Header styles
+ */
+.dcm-header-not-front {
+  background:url('../images/dcm-front-bg.png') no-repeat;
+  display:inline-block;
+  height:190px;
+}
+
+
+/*
+ *   Footer styles
+ */
+  
+  #dcm-footer {
+    padding:20px 0;
+    background:#4B4B4B;
+    color:#fff;
+  }
+  
+  #footer-message {
+    text-align:right;
+  }
+  
+  #dcm-footer * {
+    margin:0;
+    padding:0;
+  }
+  
+  #dcm-footer a {
+    color:#F2E250;
+  }
+  

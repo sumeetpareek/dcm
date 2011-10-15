@@ -37,8 +37,8 @@ function dcm_preprocess_page(&$vars) {
     }
     // right column & center
     elseif ($vars['layout'] == 'right') {
-      $vars['right_classes'] = 'col-right span-6 last';
-      $vars['center_classes'] = 'col-center span-18';
+      $vars['right_classes'] = 'col-right span-9 last';
+      $vars['center_classes'] = 'col-center span-21';
     }
     $vars['body_classes'] .= ' col-2 ';
   }
