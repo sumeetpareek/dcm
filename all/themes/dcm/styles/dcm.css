@@ -1,0 +1,291 @@
+  
+/*
+ *   Menu font
+ */  
+
+  @font-face {
+    font-family: 'BostonTrafficRegular';
+    src: url('../fonts/boston_traffic-webfont.eot');
+    src: url('../fonts/boston_traffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/boston_traffic-webfont.woff') format('woff'),
+         url('../fonts/boston_traffic-webfont.ttf') format('truetype'),
+         url('../fonts/boston_traffic-webfont.svg#BostonTrafficRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+/*
+ *   Generic styles
+ */
+  
+  body {
+    font-size:13px;
+    color:#444;
+    /*
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    */
+    font-family:"Lucida Grande", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:normal;
+  }
+   
+  a {
+    text-decoration:none;
+    color:#0A78BD;
+  }
+  
+  a:hover {
+    text-decoration:none;
+    color:#BF3030;
+  }
+  
+  a:visited {
+    color:#48A;
+  }
+  
+  input[type=text], input[type=password], textarea, select {
+    border:1px solid #CCC;
+    padding:0.5em;
+    color:#444;
+    font-family:"Lucida Grande", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:13px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    border:1px solid #999;
+  }
+  
+  h1 {
+    font-family:'BostonTrafficRegular';
+  }
+  
+/* 
+ *   Layout styling
+ */
+  
+  .col-right .block {
+    padding:15px;
+  }
+  
+  #dcm-main-content {
+    background:url('../images/main-bg.png') repeat-y;
+    display:inline-block;
+    font-size:15px;
+  }
+  
+  #dcm-main-content-inner {
+    padding:10px 20px;
+  }
+  
+
+/*
+ *   Sidebar styling
+ */
+ 
+  .col-right a {
+    color:#F2E250;
+  }
+  
+  .col-right {
+    color:#E7E9EB;
+  }
+ 
+  .twtr-hd, .twtr-ft {
+    display: none;
+  }
+  
+  .mumbai-talkies h3 {
+    color:#52BCFF;
+    text-shadow:#000 1px 3px 3px;
+    text-transform:lowercase;
+    text-align:center;
+    background:url('../images/mumbai-talkies.png') 15px 0 no-repeat;
+    line-height:45px;
+  }
+  
+  .quick-links {
+    background:#fff;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    -o-border-radius:12px;
+    -ms-border-radius:12px;
+    -khtml-border-radius:12px;
+    border-radius:12px;
+    -moz-box-shadow:0 1px 2px #333;
+    -webkit-box-shadow:0 1px 2px #333;
+    -o-box-shadow:0 1px 2px #333;
+    box-shadow:0 1px 2px #333;
+    width:260px;
+    margin:20px auto;
+    padding:10px 0 0 0 !important;
+  }
+  
+  .quick-links h3 {
+    background:#323131;
+    color:#fff;
+    font-size:15px;
+    font-weight:bold;
+    padding:5px;
+    padding-left:25px;
+  }
+  
+  .quick-links .content {
+    padding:0 10px 10px 10px;
+  }
+  
+  .quick-links ul li {
+    list-style-image:url('../images/quick-links-list-bg.png');
+    padding:5px;
+    margin-left:15px;
+  }
+  
+  .quick-links a {
+    color:#0A78BD;
+  }
+  
+/* 
+ *   Front page styling
+ */
+  
+  #first-time {
+    display:none;
+  }
+  
+  #front-page-wrapper {
+    background:url('../images/dcm-front-bg.png') no-repeat;
+    height:470px;
+  }
+   
+  #dcm-date {
+    font-family:'BostonTrafficRegular';
+    color:#3A3A3A;
+    font-size:50px;
+  }
+  
+  #submit-proposal {
+    margin-left:303px;
+    margin-right:14px;
+  }
+  
+  #submit-proposal, #are-you-a-sponsor {
+    background:#F6F6F6;
+    height:270px;
+    overflow:hidden;
+    padding:0;
+    width:233px;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    -o-border-radius:16px;
+    -ms-border-radius:16px;
+    -khtml-border-radius:16px;
+    border-radius:16px;
+    -moz-box-shadow:0 1px 2px #333;
+    -webkit-box-shadow:0 1px 2px #333;
+    -o-box-shadow:0 1px 2px #333;
+    box-shadow:0 1px 2px #333;
+  }
+  
+  #submit-proposal .block, #are-you-a-sponsor .block {
+    padding:15px;
+  }
+  
+  #submit-proposal .block h3, #are-you-a-sponsor .block h3 {
+    font-size:23px;
+    color:#0A78BD;
+    margin-bottom:10px;
+  }
+  
+  .view-front-page-main-content .views-field-title a {
+    font-size:22px;
+    font-weight:bold;
+  }
+  
+  .view-front-page-main-content .views-row {
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+  }
+  
+  .view-front-page-main-content .views-row-last {
+    margin-top:10px;
+    margin-bottom:0px;
+    border-bottom:0;
+  }
+
+/*
+ *   Header styles
+ */
+ 
+  .dcm-header-not-front {
+    background:url('../images/dcm-front-bg.png') no-repeat;
+    display:inline-block;
+    height:190px;
+  }
+
+  #logo {
+    padding-top:15px;
+  }
+  
+  #main-nav-menu ul li {
+    display:inline;
+    list-style:none;
+    list-style-image:none;
+    margin-left:35px;
+    margin-right:30px;
+  }
+  
+  #main-nav-menu ul li a {
+    font-family:'BostonTrafficRegular';
+    color:#3A3A3A;
+    font-size:13px;
+  }
+  
+  #main-nav-menu ul li a:hover {
+    color:#BF3030;
+  }
+  
+  #main-nav-menu ul {
+    float:right;
+    padding-top:45px;
+  }
+  
+
+/*
+ *   Footer styles
+ */
+  
+  #dcm-footer {
+    padding:20px 0;
+    background:#4B4B4B;
+    color:#fff;
+  }
+  
+  #footer-message {
+    text-align:right;
+  }
+  
+  #dcm-footer * {
+    margin:0;
+    padding:0;
+  }
+  
+  #dcm-footer a {
+    color:#F2E250;
+  }
+  
+  #dcm-footer ul li {
+    display:inline;
+    list-style:none;
+    list-style-image:none;
+    margin-left:35px;
+    margin-right:30px;
+  }
+  
+  
+  
+  
+  
+  
+  #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {
+    background-color:none !important;
+  }
