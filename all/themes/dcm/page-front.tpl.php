@@ -85,7 +85,6 @@
   <div id="dcm-footer" class="span-30">
     <div class="span-21">
       <?php print $footer; ?>
-      &nbsp;
     </div>
     <div id="footer-message" class="span-9 last">
       <?php print $footer_message; ?>
