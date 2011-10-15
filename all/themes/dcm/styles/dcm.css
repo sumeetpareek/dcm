@@ -37,7 +37,11 @@
   a:hover {
     text-decoration:none;
     color:#BF3030;
-  }  
+  }
+  
+  a:visited {
+    color:#48A;
+  }
 
 /* 
  *   Layout styling
@@ -50,8 +54,13 @@
   #dcm-main-content {
     background:url('../images/main-bg.png') repeat-y;
     display:inline-block;
+    font-size:15px;
   }
-
+  
+  #dcm-main-content-inner {
+    padding:10px 20px;
+  }
+  
 
 /*
  *   Sidebar styling
@@ -69,6 +78,10 @@
 /* 
  *   Front page styling
  */
+  
+  #first-time {
+    display:none;
+  }
   
   #front-page-wrapper {
     background:url('../images/dcm-front-bg.png') no-repeat;
@@ -115,6 +128,22 @@
     margin-bottom:10px;
   }
   
+  .view-front-page-main-content .views-field-title a {
+    font-size:22px;
+    font-weight:bold;
+  }
+  
+  .view-front-page-main-content .views-row {
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+  }
+  
+  .view-front-page-main-content .views-row-last {
+    margin-top:10px;
+    margin-bottom:0px;
+    border-bottom:0;
+  }
 
 /*
  *   Header styles

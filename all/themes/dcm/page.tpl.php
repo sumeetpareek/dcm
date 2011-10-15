@@ -45,29 +45,31 @@
   
   <div id="dcm-main-content" class="span-30">
     <div class="<?php print $center_classes; ?>">
-      <?php
-        if ($breadcrumb != '') {
-          print $breadcrumb;
-        }
+      <div id="dcm-main-content-inner">
+        <?php
+          if ($breadcrumb != '') {
+            print $breadcrumb;
+          }
 
-        if ($tabs != '') {
-          print '<div class="tabs">'. $tabs .'</div>';
-        }
+          if ($tabs != '') {
+            print '<div class="tabs">'. $tabs .'</div>';
+          }
 
-        if ($messages != '') {
-          print '<div id="messages">'. $messages .'</div>';
-        }
+          if ($messages != '') {
+            print '<div id="messages">'. $messages .'</div>';
+          }
 
-        if ($title != '') {
-          print '<h1>'. $title .'</h1>';
-        }
+          if ($title != '') {
+            print '<h1>'. $title .'</h1>';
+          }
 
-        print $help; // Drupal already wraps this one in a class
+          print $help; // Drupal already wraps this one in a class
 
-        print $content;
-        //print $feed_icons;
-      ?>
-    </div>
+          print $content;
+          //print $feed_icons;
+        ?>
+      </div>
+    </div>  
 
     <?php if ($right): ?>
       <div class="<?php print $right_classes; ?>"><?php print $right; ?></div>
