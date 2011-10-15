@@ -220,6 +220,8 @@
     background:url('../images/dcm-front-bg.png') no-repeat;
     display:inline-block;
     height:190px;
+    position: fixed;
+    z-index: 9999;
   }
 
   #logo {
@@ -288,4 +290,8 @@
   
   #twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {
     background-color:none !important;
+  }
+
+  body.not-front #dcm-main-content {
+    margin-top: 190px;
   }
