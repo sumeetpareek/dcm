@@ -93,7 +93,56 @@
   .twtr-hd, .twtr-ft {
     display: none;
   }
-
+  
+  .mumbai-talkies h3 {
+    color:#52BCFF;
+    text-shadow:#000 1px 3px 3px;
+    text-transform:lowercase;
+    text-align:center;
+    background:url('../images/mumbai-talkies.png') 15px 0 no-repeat;
+    line-height:45px;
+  }
+  
+  .quick-links {
+    background:#fff;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    -o-border-radius:12px;
+    -ms-border-radius:12px;
+    -khtml-border-radius:12px;
+    border-radius:12px;
+    -moz-box-shadow:0 1px 2px #333;
+    -webkit-box-shadow:0 1px 2px #333;
+    -o-box-shadow:0 1px 2px #333;
+    box-shadow:0 1px 2px #333;
+    width:260px;
+    margin:20px auto;
+    padding:10px 0 0 0 !important;
+  }
+  
+  .quick-links h3 {
+    background:#323131;
+    color:#fff;
+    font-size:15px;
+    font-weight:bold;
+    padding:5px;
+    padding-left:25px;
+  }
+  
+  .quick-links .content {
+    padding:0 10px 10px 10px;
+  }
+  
+  .quick-links ul li {
+    list-style-image:url('../images/quick-links-list-bg.png');
+    padding:5px;
+    margin-left:15px;
+  }
+  
+  .quick-links a {
+    color:#0A78BD;
+  }
+  
 /* 
  *   Front page styling
  */
@@ -104,7 +153,7 @@
   
   #front-page-wrapper {
     background:url('../images/dcm-front-bg.png') no-repeat;
-    height:500px;
+    height:470px;
   }
    
   #dcm-date {
@@ -197,7 +246,7 @@
   
   #main-nav-menu ul {
     float:right;
-    margin-top:15px;
+    margin-top:45px;
   }
   
 
