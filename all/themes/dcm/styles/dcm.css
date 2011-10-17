@@ -162,6 +162,12 @@
     font-size:50px;
   }
   
+  #dcm-date span{
+    font-family: verdana;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
   #submit-proposal {
     margin-left:303px;
     margin-right:14px;
