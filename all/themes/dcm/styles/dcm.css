@@ -300,3 +300,18 @@
 
   body.not-front #dcm-main-content {
   }
+  
+  #block-user-0 .form-item {
+    margin:0;
+  }
+  #block-user-0 #edit-name,
+  #block-user-0 #edit-pass {
+    width: 200px;
+  }
+  #block-user-0 #edit-submit {
+    margin: 10px 0;
+  }
+  #block-user-0 li {
+    list-style: none;
+  }
+  
